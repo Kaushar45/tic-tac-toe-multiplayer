@@ -8,7 +8,6 @@ if (userId) {
 let boxes = document.querySelectorAll(".box");
 
 socket.on("data", (data) => {
-  console.log(data);
   boxes.forEach((box, i) => {
     box.innerHTML = data[i];
   });
